@@ -1,0 +1,19 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^puntoret$ puntoria.php [NC,L]
+RewriteRule ^kyqu$ login.php [NC,L]
+RewriteRule ^profili/im$ myprofile.php [NC,L]
+RewriteRule ^hyrjet$ lastkyqja.php [NC,L]
+RewriteRule ^shtopuntorin$ puntoradd.php [NC,L]
+RewriteRule ^qkyqu$ logout.php [NC,L]
+RewriteRule ^profesioni$ profesionet.php [NC,L]
+RewriteRule ^profesioni/edit/([0-9a-zA-Z]+) profesionet.php?edit=$1 [NC,L]
+RewriteRule ^profesioni/fshije/([0-9a-zA-Z]+) profesionet.php?delete=$1 [NC,L]
+RewriteRule ^puna$ process.php [NC,L]
+RewriteRule ^puno$ procesi.php [NC,L]
+RewriteRule ^info/puntori/([0-9a-zA-Z]+) infopuntori.php?info=$1 [NC,L]
+RewriteRule ^info/fshiju/([0-9a-zA-Z]+) infopuntori.php?fshiju=$1 [NC,L]
+RewriteRule ^edito/puntorin/([0-9a-zA-Z]+) editopuntorin.php?edito=$1 [NC,L]
+RewriteRule ^kerko/([0-9a-zA-Z]+) puntoria.php?query=$1 [NC,L]
+
+
